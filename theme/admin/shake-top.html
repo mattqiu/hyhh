@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php require_once 'common.html';?>
+    <title> 活动排名</title>
+</head>
+<body>
+<?php require_once 'header.html';?>
+        <div class="wrap">
+        <?php require_once 'admin-sidebar.html';?>
+
+            <div class="main-content">
+            
+                <div class="page-content">
+                    
+                    <div class="page-header">
+                        <h1> 活动排名</h1>
+                    </div><!-- /.page-header -->
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="pagination-right">
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead class="thead-heading">
+                                    <tr>
+                                        <th>排名</th>
+                                        <th>头像</th>
+                                        <th>称呼</th>
+                                        <th>分数</th>
+                                        <th>时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i=1;foreach ($list['data'] as $k=>$data):?>
+                                    <tr>
+                                        <td><font color="red" size="5"><?php echo $i;?></font></td>
+                                        <td><img src="<?php echo $data->headimgurl?$data->headimgurl:'/theme/admin/assets/images/unknown.jpg';?>" style="max-width:80px;max-height:80px;"></td>
+                                        <td><?php echo $data->username;?></td>
+                                        <td><?php echo $data->score;?></td>
+                                        <td><?php echo date('Y-m-d H:i:s',$data->updated);?></td>
+                                    </tr>
+                                    <?php $i++;endforeach;?>
+                                </tbody>
+                            </table>
+                        </div>                        
+                    </div>
+
+                </div>
+            
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        <?php require_once 'footer.html';?>
+    <script type="text/javascript">   
+        $(function(){
+
+        });
+	</script>

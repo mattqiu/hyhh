@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php require_once 'common.html';?>
+        <title>新增 活动</title>
+</head>
+<body>
+    <?php require_once 'header.html';?>
+        <div class="wrap">
+        <?php require_once 'admin-sidebar.html';?>
+            <div class="main-content">
+            
+                <div class="page-content">
+                    
+                    <div class="page-header">
+                        <h1>新增 活动</h1>
+                    </div><!-- /.page-header -->
+                    
+                    <div class="form-horizontal">
+                        <form method="post" action="" enctype="multipart/form-data" id="shake-add">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right"> 活动名称</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group col-sm-9">
+                                        <input type="text" name="title" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right"> 活动图片</label>
+                                <div class="col-sm-9">
+                                    <input type="hidden" class="image-src_0" name="preview" class="form-control" placeholder="" />
+                                        <span class="avatarUpload" data-id="src_0" id="src_0">浏览文件</span>
+                                        <img class="imageshow-src_0" style="max-width:300px;max-height:200px;"  src="/theme/admin/assets/images/trans.png"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">游戏时间</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group col-sm-9">
+                                        <input type="text" name="timeout" class="form-control" placeholder="秒"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">游戏简介</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group col-sm-9">
+                                        <textarea name="summary" class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>                    
+                            <div class="clearfix form-actions">
+                                <div class="col-sm-offset-3 col-sm-9">
+                                    <button type="button" class="btn btn-btn shake-add">
+                                        <i class="fa fa-check"></i>
+                                        提交
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.form-horizontal -->
+
+                </div>
+            
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        <?php require_once 'footer.html';?>
+
+        <script>
+
+
+        $(function(){
+
+            $(".shake-add").click(function(){
+                $.ajax({
+                    type: "POST",
+                    url: "/admin/shake/add",
+                    data: $("#shake-add").serialize(),
+                    dataType: "json",
+                    success: function(data){
+                      if (data.status=="success") {
+                          location.href="/admin/shake/search";
+                      } else {
+                         alert(data.msg);
+                         return false;
+                      }
+                    }
+                });
+            });
+        });
+        </script>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>疯狂摇大奖</title>
+    <meta http-equiv="Content-Language" content="zh-CN"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <script src="/theme/wechat/assets/js/jquery-1.8.2.min.js"></script>
+    <script src="/theme/wechat/assets/js/count.min.js"></script>
+    <style>
+        body {width:100%;margin:0;padding:0;background:#fff url(/theme/wechat/assets/images/shake-bg.jpg) scroll no-repeat;-webkit-background-size:cover;background-size:cover;overflow:hidden;}
+        .step2 {display:none;}
+        .nounderline {text-decoration:none;}
+        
+        #logo {position:absolute;top:3%;width:100%;text-align:right;}
+        #logo img {width:151px; height:82px;}
+        #main {position:absolute;top:18%;width:100%;text-align:center;}
+        #main #titlePanel {width:200px;height:70px;}
+        #main #scorePanel {margin-top:-15px;font-weight:bold;font-size:36px;color:#bf2d5c;}
+        #main #scorePanel .snake{background:url(/theme/wechat/assets/images/shake-snake.png) no-repeat scroll right center;width:70%;height:40px;}
+        #main #scorePanel p {margin:14px 0px;}
+        #rule {position:absolute;top:36%;left:50%;margin-left:-80px;width:160px;text-align:center;}
+        #rule a {text-decoration:underline;display:block;line-height:34px;font-size:18px;color:#bf2d5c;height:36px;width:160px;}
+        #fudai {position:absolute;top:45%;left:50%;margin-left:-145px;width:300px;text-align:center;}
+        #icon {position:absolute;top:52%;left:50%;margin-left:-100px;width:200px;text-align:center;}
+        #ruleDesc {text-decoration:none;box-shadow:0 0 6px #ccc;opacity:0.98;display:none;width:220px;height:360px;position:absolute;z-index:999;top:50%;left:50%;margin-left:-140px;margin-top:-190px;background:#fff;border:1px solid #ddd;border-radius:6px;text-align:center;padding:30px;}
+        .ruleContent {margin-top:12px;font-size:15px;color:#333;line-height:24px;text-align:justify;}
+        
+        @-webkit-keyframes shake {0%{-webkit-transform:translate(0,0)rotate(0);}2%{-webkit-transform:translate(-0.5px,0.5px)rotate(0.5deg);}4%{-webkit-transform:translate(-0.5px,-0.5px)rotate(0.5deg);}6%{-webkit-transform:translate(2.5px,2.5px)rotate(-0.5deg);}8%{-webkit-transform:translate(2.5px,2.5px)rotate(-0.5deg);}10%{-webkit-transform:translate(2.5px,-1.5px)rotate(1.5deg);}12%{-webkit-transform:translate(-1.5px,2.5px)rotate(-0.5deg);}14%{-webkit-transform:translate(0.5px,2.5px)rotate(1.5deg);}16%{-webkit-transform:translate(-1.5px,-1.5px)rotate(0.5deg);}18%{-webkit-transform:translate(0.5px,-1.5px)rotate(0.5deg);}20%{-webkit-transform:translate(2.5px,-1.5px)rotate(0.5deg);}22%{-webkit-transform:translate(0.5px,0.5px)rotate(-0.5deg);}24%{-webkit-transform:translate(1.5px,1.5px)rotate(-0.5deg);}26%{-webkit-transform:translate(1.5px,-0.5px)rotate(0.5deg);}28%{-webkit-transform:translate(2.5px,-0.5px)rotate(0.5deg);}30%{-webkit-transform:translate(1.5px,2.5px)rotate(-0.5deg);}32%{-webkit-transform:translate(1.5px,1.5px)rotate(1.5deg);}34%{-webkit-transform:translate(-1.5px,0.5px)rotate(-0.5deg);}36%{-webkit-transform:translate(2.5px,2.5px)rotate(-0.5deg);}38%{-webkit-transform:translate(-1.5px,-1.5px)rotate(-0.5deg);}40%{-webkit-transform:translate(1.5px,-0.5px)rotate(1.5deg);}42%{-webkit-transform:translate(0.5px,-1.5px)rotate(1.5deg);}44%{-webkit-transform:translate(-1.5px,-1.5px)rotate(1.5deg);}46%{-webkit-transform:translate(2.5px,2.5px)rotate(1.5deg);}48%{-webkit-transform:translate(0.5px,0.5px)rotate(0.5deg);}50%{-webkit-transform:translate(1.5px,-1.5px)rotate(-0.5deg);}52%{-webkit-transform:translate(-1.5px,2.5px)rotate(-0.5deg);}54%{-webkit-transform:translate(-1.5px,-0.5px)rotate(-0.5deg);}56%{-webkit-transform:translate(1.5px,0.5px)rotate(0.5deg);}58%{-webkit-transform:translate(0.5px,-0.5px)rotate(0.5deg);}60%{-webkit-transform:translate(0.5px,1.5px)rotate(0.5deg);}62%{-webkit-transform:translate(2.5px,-0.5px)rotate(0.5deg);}64%{-webkit-transform:translate(1.5px,-0.5px)rotate(0.5deg);}66%{-webkit-transform:translate(0.5px,-1.5px)rotate(-0.5deg);}68%{-webkit-transform:translate(-0.5px,0.5px)rotate(1.5deg);}70%{-webkit-transform:translate(0.5px,1.5px)rotate(0.5deg);}72%{-webkit-transform:translate(2.5px,-0.5px)rotate(-0.5deg);}74%{-webkit-transform:translate(0.5px,1.5px)rotate(-0.5deg);}76%{-webkit-transform:translate(-0.5px,1.5px)rotate(0.5deg);}78%{-webkit-transform:translate(0.5px,0.5px)rotate(-0.5deg);}80%{-webkit-transform:translate(2.5px,-1.5px)rotate(0.5deg);}82%{-webkit-transform:translate(0.5px,1.5px)rotate(0.5deg);}84%{-webkit-transform:translate(-1.5px,-1.5px)rotate(-0.5deg);}86%{-webkit-transform:translate(0.5px,2.5px)rotate(1.5deg);}88%{-webkit-transform:translate(0.5px,2.5px)rotate(-0.5deg);}90%{-webkit-transform:translate(2.5px,1.5px)rotate(1.5deg);}92%{-webkit-transform:translate(-1.5px,-1.5px)rotate(0.5deg);}94%{-webkit-transform:translate(-0.5px,-1.5px)rotate(-0.5deg);}96%{-webkit-transform:translate(-0.5px,-1.5px)rotate(0.5deg);}98%{-webkit-transform:translate(-0.5px,1.5px)rotate(0.5deg);}100%{-webkit-transform:translate(0,0)rotate(0);}}
+        .shake-constant {
+            -webkit-animation-duration:100ms;-webkit-animation-iteration-count:infinite;-webkit-animation-name:shake;-webkit-animation-timing-function:ease-in-out;
+        }
+  
+    
+    </style>
+</head>
+
+<body>
+
+    <div id="logo">
+        <img src="/theme/wechat/assets/images/logo.jpg" />
+    </div>
+    
+    <div id="main">
+        <img id="titlePanel" class="step1" src="/theme/wechat/assets/images/shake-title.png" />
+        <div id="scorePanel" class="step2">
+            <p style="font-size:24px;">已摇得</p>
+            <p><span id="score"></span><span style="font-size:32px;">分</span></p>
+            <div class="snake"></div>
+        </div>
+    </div>
+    
+    <div id="rule" class="step1">
+        <a href="javascript:showRule();">活动规则</a>
+    </div>
+
+    <div id="icon">
+        <img class="shake-constant" width="180" height="253" src="/theme/wechat/assets/images/shake-icon.png" />
+    </div>
+    
+    <div id="fudai" style="display:none;">
+        <img width="300" height="270" src="/theme/wechat/assets/images/shake-fudai.png" />
+    </div>
+    
+    
+    <a class="nounderline" href="javascript:hideRule();">
+        <div id="ruleDesc" class="step1">
+            <div class="ruleContent">
+                <p>1. 扫描二维码或发送"摇大奖"参与活动.</p>
+                <p>2. 在活动互动中由主持人宣布开始游戏.</p>
+                <p>3. 迅速疯狂摇晃手机直到活动时间结束.</p>
+                <p>4. 参与人员可在游戏结束时通过手机页面查看自己的得分(得分多少完全由各位摇晃手机的频次和疯狂程度所决定).</p>
+                <p>5. 游戏后台会即时统计出相关排名,得分最高者领取相应奖品.</p>
+            </div>
+            <a style="position:absolute;left:-11px;top:-11px;" href="javascript:hideRule();"><img width="30" height="30" src="/theme/wechat/assets/images/x.png"></a>
+        </div>
+    </a>
+    
+    <audio id="music" preload="auto" src="/theme/wechat/assets/audio/music.mp3"><source src="/theme/wechat/assets/audio/music.mp3" type="audio/mp3"/></audio>
+    
+    <script>
+
+        //注册摇一摇事件
+        if (window.DeviceMotionEvent) {
+            window.addEventListener('devicemotion', deviceMotionHandler, false);
+        }
+      
+        //是否开始过游戏
+        var hasPlayed = false;
+        
+        //定义变量
+        var threshold  = 1800;
+        var lastUpdate = 0;
+        var lastSubmit = 0;
+        var score      = 0;
+        var x = y = z = lastX = lastY = lastZ = 0;
+        
+        //监听摇一摇
+        function deviceMotionHandler(eventData) {
+            var acceleration = eventData.accelerationIncludingGravity;
+            var curTime  = new Date().getTime();
+            var shakeTime = curTime - lastUpdate;
+            var subTime   = curTime - lastSubmit;
+            //每100毫秒计算一次分数
+            if (shakeTime > 100) {
+                lastUpdate = curTime;
+                x = acceleration.x;
+                y = acceleration.y;
+                z = acceleration.z;
+                var speed = Math.abs(x+y+z-lastX-lastY-lastZ)/shakeTime*10000;
+                if (speed > threshold) {
+                    score += Math.floor(speed/200);
+                }
+                if (speed > 1200) {
+                    music('on');
+                }
+                lastX=x; lastY=y; lastZ=z;
+            }
+            //每隔1.5秒提交一次数据
+            if (subTime > 2000 && score > 0) {
+                var t = new Date().getTime();
+                lastSubmit = curTime;
+                $.ajax({
+                    url: '/wechat/shake/score',
+                    dataType:'json',
+                    data: {format:'json', score:score, t:t},
+                    success: function(res) {
+                        if (res.status == 200 && res.data.start) {
+                            hasPlayed = true;
+                            score -= res.data.post_score;
+                            new CountUp("score",res.data.pre_score,res.data.score,0,1,{separator:''}).start();
+                            $('.step1').hide();
+                            $('.step2').show();
+                            toggleMusic = true;
+                            music('on');
+                        } else if (res.status == 200 && !res.data.start) {
+                            music('off');
+                            score = 0;
+                            toggleMusic = false;
+                            if (hasPlayed) {
+                                hasPlayed = false;
+                                $('#icon').hide();
+                                $('#fudai').show();
+                            }
+                        }
+                    }
+                });
+            }
+        }
+        
+        //音效
+        var toggleMusic = false;
+        var isMusicPlaying = false;
+        var media = document.getElementById("music");
+        media.addEventListener("playing", function(){
+            isMusicPlaying = true;
+        });
+        media.addEventListener("pause", function(){
+            isMusicPlaying = false;
+        });
+        function music(toggle) {
+            if (!toggleMusic) {return ;}
+            if (toggle == 'on') {
+                media.play();
+            } else if (toggle == 'off') {
+                media.pause();
+            }
+        }
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+            media.src = "/theme/wechat/assets/audio/music.mp3";
+        }
+      
+        //游戏说明
+        function showRule() {
+            $('#ruleDesc').show();
+        }
+        function hideRule() {
+            $('#ruleDesc').hide();
+        }
+
+        //5分钟后自动回到游戏首页
+        setTimeout(function(){
+            location.href = '/wechat/shake';
+        },120000);
+    </script>
+    
+    
+</body>
+
+
+</html>

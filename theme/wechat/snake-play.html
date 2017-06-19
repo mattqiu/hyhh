@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>小游戏贪吃蛇开始了</title>
+    <?php include 'meta.html';?>
+    <link rel="stylesheet" type="text/css" href="/theme/wechat/assets/css/snake.css?v=1.65" />
+    <style>
+        a {text-decoration:none;}
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+    <canvas id="fireworks"></canvas>
+    <canvas id="fireworks2"></canvas>
+    <div id="score">0</div>
+    <div id="controls">
+        <a id="startORpause" class="pause" onclick="toggleControls()"></a>
+    </div>
+
+    <audio id="audio-background" preload="auto" loop="loop" autoplay="autoplay" src="/theme/wechat/assets/audio/background.mp3"><source src="/theme/wechat/assets/audio/background.mp3" type="audio/mp3"/></audio>
+    <audio id="audio-eat" preload="auto" src="/theme/wechat/assets/audio/eat.mp3"><source src="/theme/wechat/assets/audio/eat.mp3" type="audio/mp3"/></audio>
+    <audio id="audio-fireworks" preload="auto" src="/theme/wechat/assets/audio/fireworks.mp3"><source src="/theme/wechat/assets/audio/fireworks.mp3" type="audio/mp3"/></audio>
+    <audio id="audio-successful" preload="auto" src="/theme/wechat/assets/audio/successful.mp3"><source src="/theme/wechat/assets/audio/successful.mp3" type="audio/mp3"/></audio>
+    <audio id="audio-failed"></audio>
+    
+    <div id="level2" class="zoomIn" style="opacity:0.95;display:none;width:220px;height:340px;position:absolute;z-index:9999;top:50%;left:50%;margin-left:-140px;margin-top:-190px;background:#fff;border:1px solid #eee;border-radius:7px;text-align:center;padding:30px;">
+        <div style="margin-top:12px;font-size:24px;color:#cf3d7c;">闯关成功！</div>
+        <div style="margin-top:12px;color:#333;">你的当前得分：<span id="lv2score"></span></div>
+        <div style="margin-top:12px;color:#666;font-size:14px;line-height:30px;">恭喜你成功闯过 1 关，你的实力才是值得肯定的。</div>
+        
+        <div style="margin-top:20px;"><a href="javascript:hiddenLV();snakeStart();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#fff;height:36px;width:100%;border:1px solid #bf2d5c;background:#cf3d7c;display:block;">继续挑战</a></div>
+        
+        <div style="margin-top:24px;"><a href="javascript:snake.gameover();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#cf3d7c;height:36px;width:100%;border:1px solid #ddd;background:#fff;display:block;">结束游戏，点击抽奖</a></div>
+        
+    </div>
+    <div id="level3" class="zoomIn" style="opacity:0.95;display:none;width:220px;height:340px;position:absolute;z-index:9999;top:50%;left:50%;margin-left:-140px;margin-top:-190px;background:#fff;border:1px solid #eee;border-radius:7px;text-align:center;padding:30px;">
+        <div style="margin-top:12px;font-size:24px;color:#cf3d7c;">闯关成功！</div>
+        <div style="margin-top:12px;color:#333;">你的当前得分：<span id="lv3score"></span></div>
+        <div style="margin-top:12px;color:#666;font-size:14px;line-height:30px;">恭喜你成功闯过 2 关</div>
+        
+        <div style="margin-top:20px;"><a href="javascript:hiddenLV();snakeStart();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#fff;height:36px;width:100%;border:1px solid #bf2d5c;background:#cf3d7c;display:block;">继续挑战</a></div>
+        
+        <div style="margin-top:24px;"><a href="javascript:snake.gameover();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#cf3d7c;height:36px;width:100%;border:1px solid #ddd;background:#fff;display:block;">结束游戏，点击抽奖</a></div>
+        
+
+    </div>
+    <div id="level4" class="zoomIn" style="opacity:0.95;display:none;width:220px;height:340px;position:absolute;z-index:9999;top:50%;left:50%;margin-left:-140px;margin-top:-190px;background:#fff;border:1px solid #eee;border-radius:7px;text-align:center;padding:30px;">
+        <div style="margin-top:12px;font-size:24px;color:#cf3d7c;">闯关成功！</div>
+        <div style="margin-top:12px;color:#333;">你的当前得分：<span id="lv4score"></span></div>
+        <div style="margin-top:12px;color:#666;font-size:14px;line-height:30px;">恭喜你成功闯过 3 关</div>
+        
+        <div style="margin-top:20px;"><a href="javascript:hiddenLV();snakeStart();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#fff;height:36px;width:100%;border:1px solid #bf2d5c;background:#cf3d7c;display:block;">继续挑战</a></div>
+        
+        <div style="margin-top:24px;"><a href="javascript:snake.gameover();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#cf3d7c;height:36px;width:100%;border:1px solid #ddd;background:#fff;display:block;">结束游戏，点击抽奖</a></div>
+        
+
+    </div>
+
+    <div id="level5" class="zoomIn" style="opacity:0.95;display:none;width:220px;height:340px;position:absolute;z-index:9999;top:50%;left:50%;margin-left:-140px;margin-top:-190px;background:#fff;border:1px solid #eee;border-radius:7px;text-align:center;padding:30px;">
+        <div style="margin-top:12px;font-size:24px;color:#cf3d7c;">闯关成功！</div>
+        <div style="margin-top:12px;color:#333;">你的当前得分：<span id="lv5score"></span></div>
+        <div style="margin-top:12px;color:#666;font-size:14px;line-height:30px;">恭喜你成功闯过 4 关</div>
+        
+        <div style="margin-top:20px;"><a href="javascript:hiddenLV();snakeStart();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#fff;height:36px;width:100%;border:1px solid #bf2d5c;background:#cf3d7c;display:block;">继续挑战</a></div>
+        
+        <div style="margin-top:24px;"><a href="javascript:snake.gameover();" style="text-decoration:none;border-radius:5px;line-height:36px;font-size:16px;color:#cf3d7c;height:36px;width:100%;border:1px solid #ddd;background:#fff;display:block;">结束游戏，点击抽奖</a></div>
+        
+    </div>
+    
+   
+    
+    
+    <div id="ios" style="display:none;width:206px;height:144px;position:absolute;z-index:9999;top:50%;left:50%;margin-left:-110px;margin-top:-100px;background:#fff;border:1px solid #eee;border-radius:7px;text-align:center;padding:20px;">
+        <a id="ioshref" style="line-height:40px;font-size:24px;color:#cf3d7c;"><img width="206" height="143" src="/theme/wechat/assets/images/game-over.png" /></div>
+    </div>
+    
+        <?php include __DIR__ . '/footer.html'; ?>
+    
+    <script src="/theme/wechat/assets/js/jquery-1.8.2.min.js"></script>
+    <script src="/theme/wechat/assets/js/jquery.touchSwipe.min.js"></script>
+    <script src="/theme/wechat/assets/js/count.min.js"></script>
+    <script src="/theme/wechat/assets/js/snake.js?v=1.93"></script>
+    <script>
+        $(function() {
+            snake.init();
+            snake.options.styleHead  = 'rgba(232,148,58,1)';
+            snake.options.styleBody  = 'rgba(232,148,58,{0})';
+            snake.options.styleExtra = '#F3D3AD';
+            snakeStart();
+            snakeMusic.init();
+            window.addEventListener("resize", function(){snake.init();});
+            $(document.body).swipe({
+                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    if (distance > 10) {
+                        snake.direction(direction);
+                    } else {
+                        var kacaX = snake.kaca[0].x * snake.canvas.grid,
+                            kacaY = snake.kaca[0].y * snake.canvas.grid,
+                            nowX  = fingerData[0].start.x,
+                            nowY  = fingerData[0].start.y,
+                            num   = snake.canvas.grid;
+                        switch(snake.options.direction) {
+                            case 1: case 3:
+                                if (nowX > kacaX + num) {
+                                    snake.direction(2);
+                                } else if (nowX < kacaX) {
+                                    snake.direction(4);
+                                }
+                                break;
+                            case 2: case 4:
+                                if (nowY > kacaY + num) {
+                                    snake.direction(3);
+                                } else if (nowY < kacaY) {
+                                    snake.direction(1);
+                                }
+                                break;
+                        }
+                    }
+                },
+                threshold: 0,
+                fingers: 'all'
+            });
+            setInterval(function() {
+                var score = $("#score").text();
+                if (score < snake.options.score) {
+                    new CountUp("score", score, snake.options.score, 0, 1, {separator:''}).start();
+                }
+                if (score > 8000) {
+                    level5();
+                    showPopup(5);
+                } else if (score > 6000) {
+                    level4();
+                    showPopup(4);
+                } else if (score > 3000) {
+                    level3();
+                    showPopup(3);
+                } else if (score > 1000) {
+                    level2();
+                    showPopup(2);
+                }
+            }, 1000);            
+        });
+        
+        function toggleControls() {
+            var o = $("#startORpause");
+            if (o.hasClass('play')) {
+                o.removeClass('play');
+                snakeStart();
+            } else {
+                o.addClass('play');
+                snakePause();
+            }
+        }
+        
+        //red
+        function level2() {
+            snake.options.styleHead  = 'rgba(249,7,56,1)';
+            snake.options.styleBody  = 'rgba(249,7,56,{0})';
+            snake.options.styleExtra = '#FFCCCC';
+            snake.options.maxSpeed   = 200;
+        }
+        //pink
+        function level3() {
+            snake.options.styleHead  = 'rgba(210,61,116,1)';
+            snake.options.styleBody  = 'rgba(210,61,116,{0})';
+            snake.options.styleExtra = '#EAD2CE';
+            snake.options.maxSpeed   = 200;
+        }
+        //gray
+        function level4() {
+            snake.options.styleHead  = 'rgba(138,138,138,1)';
+            snake.options.styleBody  = 'rgba(138,138,138,{0})';
+            snake.options.styleExtra = '#CACACC';
+            snake.options.maxSpeed   = 160;
+            snake.options.scoreStep  = 60;
+        }
+        //gray
+        function level5() {
+            snake.options.styleHead  = 'rgba(120,120,120,1)';
+            snake.options.styleBody  = 'rgba(120,120,120,{0})';
+            snake.options.styleExtra = '#CACACC';
+            snake.options.maxSpeed   = 100;
+            snake.options.scoreStep  = 70;
+        }
+        
+        function showPopup(lv) {
+            if (!snake.popup.hasOwnProperty(lv)) {
+                $('#level'+lv).show();
+                $('#lv'+lv+'score').text(snake.options.score);
+                snakePause();
+                firepassToggle = false;new firepass('#cf3d7c');
+            }
+            snake.popup[lv] = true;
+        }
+        function hiddenLV() {
+            $('#level2').hide();
+            $('#level3').hide();
+            $('#level4').hide();
+            $('#level5').hide();
+            firepassToggle = true;
+        }
+        function unixTime() {
+            return Date.parse(new Date()) / 1000;
+        }
+        
+        var snakeToken = "<?php echo $token;?>";
+        var snakeTime = <?php echo time();?>;
+    </script>
+    <?php include __DIR__ . '/snake-share.html';?>
+</body>
+</html>
+

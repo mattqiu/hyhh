@@ -1,0 +1,267 @@
+2016-01-20T13:23:56+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T13:23:56+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T13:23:57+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T13:23:57+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T13:23:57+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T13:23:58+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T13:23:58+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T13:23:58+08:00 [WARN] The "/opt/wwwroot/xtaff.urms/theme/admin" directory does not exist. (at line 35 in file /opt/wwwroot/Pyramid/Component/Templating/Php/Loader.php)
+2016-01-20T14:10:32+08:00 [WARN] Notice Undefined property: stdClass::$field_role_permission (at line 40 in file /opt/wwwroot/xtaff.urms/Application/Entity/User/UserEntityController.php)
+2016-01-20T14:10:32+08:00 [WARN] Warning Invalid argument supplied for foreach() (at line 40 in file /opt/wwwroot/xtaff.urms/Application/Entity/User/UserEntityController.php)
+2016-01-20T14:10:33+08:00 [WARN] Notice Undefined property: stdClass::$field_role_permission (at line 40 in file /opt/wwwroot/xtaff.urms/Application/Entity/User/UserEntityController.php)
+2016-01-20T14:10:33+08:00 [WARN] Warning Invalid argument supplied for foreach() (at line 40 in file /opt/wwwroot/xtaff.urms/Application/Entity/User/UserEntityController.php)
+2016-01-20T14:12:31+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:37+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:43+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:44+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:45+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:12:46+08:00 [WARN] Notice Array to string conversion (at line 276 in file /opt/wwwroot/Pyramid/Component/HttpFoundation/Response.php)
+2016-01-20T14:22:38+08:00 [DEBUG] user data is:array (
+  'total' => 104,
+  'count' => 104,
+  'data' => 
+  array (
+    'openid' => 
+    array (
+      0 => 'oMAPGjmLRgxLcFbipgz_2xMuVJ1k',
+      1 => 'oMAPGjtvZFdsfyh8dro92CbbxsWQ',
+      2 => 'oMAPGjitN9TPD60LVkj3YzrC_e78',
+      3 => 'oMAPGjk39xvn4n1osn1splTr_E5I',
+      4 => 'oMAPGjln_5lcr7QqJ9cjL970iK9I',
+      5 => 'oMAPGjttILegtbC8qj3O6gprlznc',
+      6 => 'oMAPGjnoLMi28EMpNtInnTi5VEws',
+      7 => 'oMAPGjoqfV3DjkJu7z03C34If2Jo',
+      8 => 'oMAPGjr1TERa_hAKt-Fuxa1eumlE',
+      9 => 'oMAPGjpwbTUr8p9si0GYJ8qAIjDI',
+      10 => 'oMAPGjiXz8qbFRB9o5dyICXis7o8',
+      11 => 'oMAPGjpROLMbdRw-pdiHrp_BZuOs',
+      12 => 'oMAPGjo_owNtLmkBeavjYN8L2dPM',
+      13 => 'oMAPGjtju0eXTqWVNnlawHVwJtNA',
+      14 => 'oMAPGjlnScTILTA2bNzQQ1vyIuOE',
+      15 => 'oMAPGjpjGTuBOVkv7wL29hEcCf7I',
+      16 => 'oMAPGjn76OIws9wrhCa2Sc8kUCW4',
+      17 => 'oMAPGjrG37b3DRwLQXvE1pdOoR5w',
+      18 => 'oMAPGjnwxgftmWrPieRgyGyydIqU',
+      19 => 'oMAPGjszG3y1XbU6r7CHRcJJlttU',
+      20 => 'oMAPGjpnWYNo7iRk7bldnEpLadrc',
+      21 => 'oMAPGjoYW0Q7MekLm1FL0Tlss-FY',
+      22 => 'oMAPGjn17ALMtmi8oRQW-Bmjk0oA',
+      23 => 'oMAPGjpTGlGIF8sUdbPpVi_Mb0CM',
+      24 => 'oMAPGjmzAvkByH0wNL3MJ0YiyATc',
+      25 => 'oMAPGjuK_3IZgpUh8YsFAy5MrPYA',
+      26 => 'oMAPGjuU47-DDmz5q9p6zZnR6b5A',
+      27 => 'oMAPGjiIScmO_OzaikJPdjtsyn8k',
+      28 => 'oMAPGjozLAj04edGI6rxBlnqo2Ac',
+      29 => 'oMAPGjnat58g6Bi4Vrk8l7ddSWx0',
+      30 => 'oMAPGjgsp0FT3HqXf_ZDu4PAV2wk',
+      31 => 'oMAPGjnWbEyQCC-aH-nLwlzkM-ss',
+      32 => 'oMAPGjr-pzLFyS7-4ahkt0Yc5KFQ',
+      33 => 'oMAPGjsPvDUuiZFTNX0V6xfSKpYo',
+      34 => 'oMAPGjgjs5nL_GcrPXWL6g8X7I4A',
+      35 => 'oMAPGjhsSXj9JisonFUFhP4x7S2Q',
+      36 => 'oMAPGjsuRHwCAMEJr2XJE92Sawjg',
+      37 => 'oMAPGjsyUQLJVbMQ8wtfgBxG_Ojs',
+      38 => 'oMAPGjmQ-RaeD4C7qGDyiAUw1um4',
+      39 => 'oMAPGjvs1GO8fTyyISBYIfvOVD1g',
+      40 => 'oMAPGjtrHy-8CKWZi7IX6EzQBOU4',
+      41 => 'oMAPGjsbQvzMsc1fRAiwQBvpXF64',
+      42 => 'oMAPGjparENc4EC4PK1gjLUfEZCI',
+      43 => 'oMAPGjvKvGy8wJ9oAIC6GdAdBKSk',
+      44 => 'oMAPGjqmzUEa4xGwYtnjAT7qQc4Q',
+      45 => 'oMAPGjsJonhkcVSFVsm6Ywnob6to',
+      46 => 'oMAPGjhRcZo2eMx6BwK5YJRgtiPM',
+      47 => 'oMAPGjv3HN0zMlJ-BkLGJ53PAI_M',
+      48 => 'oMAPGjrRLaSCrZUv2n-K9QEvSB-I',
+      49 => 'oMAPGjmIg3r-wt6i9pyO9G2TGz4k',
+      50 => 'oMAPGjqiPZfxZuWIVjFwG5Jc6IFA',
+      51 => 'oMAPGjrqLnMlcO3N_6LWrnuV74yo',
+      52 => 'oMAPGjtjTaIsPocy5-y4od7FGHgI',
+      53 => 'oMAPGjsStBwcoaYQa2xCEpBU8dgo',
+      54 => 'oMAPGjvJh8A3rMa3JMoZSdyVHrgY',
+      55 => 'oMAPGjk8uRG0bj5U3pORE8mOZK9E',
+      56 => 'oMAPGjlZFXwH5P-UnoBdLfagRQrQ',
+      57 => 'oMAPGjg-apvRFx7gPhqvC35Mkcqw',
+      58 => 'oMAPGjoIofLRRsu5T7TdGuZt1Fx8',
+      59 => 'oMAPGjiaxjn1L6VvMAz46vtyEMgA',
+      60 => 'oMAPGjiChfZd9zTopRD78r6HCVN8',
+      61 => 'oMAPGjkD9x6DBmv7wb0A0Sxyqya0',
+      62 => 'oMAPGjhzblTcrTkMDOEyCEDmdcOE',
+      63 => 'oMAPGjk-tvU2-LlfGMkg-PPJHCIQ',
+      64 => 'oMAPGjg3iILf6KmXgZ_GvGp_b54Y',
+      65 => 'oMAPGjpgk7aVnpzi5QsO-NlHYdm0',
+      66 => 'oMAPGjpFIod2iIh1JFD8KMIExv3A',
+      67 => 'oMAPGjtA6JiGysXciLetel8--0v0',
+      68 => 'oMAPGjjIPNuYCBWrUWxX3LVqI304',
+      69 => 'oMAPGjowWiaZPyExL1d_WYaJooVw',
+      70 => 'oMAPGjv3zjxARgHaiQKXKSwEVObE',
+      71 => 'oMAPGjoo1Przb4_T1b0rFrwuO8rk',
+      72 => 'oMAPGjk3h5uLAug6EaEWeChEqW-w',
+      73 => 'oMAPGjoVV7Co_98vqyyb2JmhACI4',
+      74 => 'oMAPGjlgjqOz_dUXJ6GecXfGGA7c',
+      75 => 'oMAPGjtZNCX_tfNzOpv5-FSZNlF8',
+      76 => 'oMAPGjrZ6XRFxnrZiEyaOXpuC-1U',
+      77 => 'oMAPGjgOXklaFKKIJEatIAM6MqYU',
+      78 => 'oMAPGjmyaszA0oCDiIgkMQ6g7K1E',
+      79 => 'oMAPGjsyTFHK2mnZymd263W-Jg0M',
+      80 => 'oMAPGjhw7Bl2FCim9_Joh520MvPw',
+      81 => 'oMAPGjlQNG_2I-CzCa9Jj2wpx46Y',
+      82 => 'oMAPGjmkVmheG7clEEf7V_uAgdqU',
+      83 => 'oMAPGjjd6TpAYGLDpGVMROphlilg',
+      84 => 'oMAPGjn-cwELXeZWcHeejvUnMzfE',
+      85 => 'oMAPGjk_3btOpZAVsLmGwCuIgRQs',
+      86 => 'oMAPGjqU_BCDUMmazS868YeKRO_o',
+      87 => 'oMAPGjlAaz5hC84uFEO5X82zX7WM',
+      88 => 'oMAPGjva23_lCiWCbP6j39gkzD40',
+      89 => 'oMAPGjky9bUnoh4M650eXwh2zKeU',
+      90 => 'oMAPGjnwW20j6zO93fpFndjQWkC4',
+      91 => 'oMAPGjvjNn6edcfj2xy6nQgxNcYA',
+      92 => 'oMAPGjmnrhmJ-ZJmuL_2eN1ntWSI',
+      93 => 'oMAPGjpdkYlbQDi-JEKHS8wwWUbw',
+      94 => 'oMAPGjoVE8FTaVT3jU8aU048HJjk',
+      95 => 'oMAPGjiqJ1ngNG-c_h2E4ur5_dHc',
+      96 => 'oMAPGjo4aEZVKgqtv8f5Q15LcZn4',
+      97 => 'oMAPGjrjeosxd2P23yGQkLpAzAUA',
+      98 => 'oMAPGjsH0xEZu0kH33OZlJPnYGVU',
+      99 => 'oMAPGjqdA2oxd64T7ul9tjjlVcLE',
+      100 => 'oMAPGjuYLr8h5Q_BRm_zPMXoIm3c',
+      101 => 'oMAPGjijpnmQXpBQbOVs7qNYvhbo',
+      102 => 'oMAPGjtJLJM85MLr-NYRtYDyjxXU',
+      103 => 'oMAPGjp5T0QT4upKhbdfdSdXJ0nE',
+    ),
+  ),
+  'next_openid' => 'oMAPGjp5T0QT4upKhbdfdSdXJ0nE',
+)
+2016-01-20T14:22:39+08:00 [DEBUG] ##### 有新的微信会员关注 is:肖棨晟-美洛舒适家 @ oMAPGjmLRgxLcFbipgz_2xMuVJ1k
+2016-01-20T14:22:39+08:00 [DEBUG] ##### 有新的微信会员关注 is:机智的小君 @ oMAPGjtvZFdsfyh8dro92CbbxsWQ
+2016-01-20T14:22:39+08:00 [DEBUG] ##### 有新的微信会员关注 is:Murphy @ oMAPGjitN9TPD60LVkj3YzrC_e78
+2016-01-20T14:22:39+08:00 [DEBUG] ##### 有新的微信会员关注 is:雷波 @ oMAPGjk39xvn4n1osn1splTr_E5I
+2016-01-20T14:22:40+08:00 [DEBUG] ##### 有新的微信会员关注 is:雨下的天空 @ oMAPGjln_5lcr7QqJ9cjL970iK9I
+2016-01-20T14:22:40+08:00 [DEBUG] ##### 有新的微信会员关注 is:刘淑粉 @ oMAPGjttILegtbC8qj3O6gprlznc
+2016-01-20T14:22:40+08:00 [DEBUG] ##### 有新的微信会员关注 is:Rebekah @ oMAPGjnoLMi28EMpNtInnTi5VEws
+2016-01-20T14:22:40+08:00 [DEBUG] ##### 有新的微信会员关注 is:向东流 @ oMAPGjoqfV3DjkJu7z03C34If2Jo
+2016-01-20T14:22:40+08:00 [DEBUG] ##### 有新的微信会员关注 is:你 @ oMAPGjr1TERa_hAKt-Fuxa1eumlE
+2016-01-20T14:22:41+08:00 [DEBUG] ##### 有新的微信会员关注 is: Marc @ oMAPGjpwbTUr8p9si0GYJ8qAIjDI
+2016-01-20T14:22:41+08:00 [DEBUG] ##### 有新的微信会员关注 is:see @ oMAPGjiXz8qbFRB9o5dyICXis7o8
+2016-01-20T14:22:41+08:00 [DEBUG] ##### 有新的微信会员关注 is:遺忘的季節 @ oMAPGjpROLMbdRw-pdiHrp_BZuOs
+2016-01-20T14:22:41+08:00 [DEBUG] ##### 有新的微信会员关注 is:范 @ oMAPGjo_owNtLmkBeavjYN8L2dPM
+2016-01-20T14:22:42+08:00 [DEBUG] ##### 有新的微信会员关注 is:Kevin🇨🇳罗 @ oMAPGjtju0eXTqWVNnlawHVwJtNA
+2016-01-20T14:22:42+08:00 [DEBUG] ##### 有新的微信会员关注 is:鹿鸣 @ oMAPGjlnScTILTA2bNzQQ1vyIuOE
+2016-01-20T14:22:42+08:00 [DEBUG] ##### 有新的微信会员关注 is:补课刚回家 @ oMAPGjpjGTuBOVkv7wL29hEcCf7I
+2016-01-20T14:22:42+08:00 [DEBUG] ##### 有新的微信会员关注 is: Allen  @ oMAPGjn76OIws9wrhCa2Sc8kUCW4
+2016-01-20T14:22:42+08:00 [DEBUG] ##### 有新的微信会员关注 is:晏娟 @ oMAPGjrG37b3DRwLQXvE1pdOoR5w
+2016-01-20T14:22:43+08:00 [DEBUG] ##### 有新的微信会员关注 is:小可 @ oMAPGjnwxgftmWrPieRgyGyydIqU
+2016-01-20T14:22:43+08:00 [DEBUG] ##### 有新的微信会员关注 is:za @ oMAPGjszG3y1XbU6r7CHRcJJlttU
+2016-01-20T14:22:43+08:00 [DEBUG] ##### 有新的微信会员关注 is:sam wilson （卫森） @ oMAPGjpnWYNo7iRk7bldnEpLadrc
+2016-01-20T14:22:43+08:00 [DEBUG] ##### 有新的微信会员关注 is:A采暖有难题，找我没问题1383914036 @ oMAPGjoYW0Q7MekLm1FL0Tlss-FY
+2016-01-20T14:22:43+08:00 [DEBUG] ##### 有新的微信会员关注 is:鱼 @ oMAPGjn17ALMtmi8oRQW-Bmjk0oA
+2016-01-20T14:22:44+08:00 [DEBUG] ##### 有新的微信会员关注 is:loveqzhi @ oMAPGjpTGlGIF8sUdbPpVi_Mb0CM
+2016-01-20T14:22:44+08:00 [DEBUG] ##### 有新的微信会员关注 is:罗丹汐 🐠 @ oMAPGjmzAvkByH0wNL3MJ0YiyATc
+2016-01-20T14:22:44+08:00 [DEBUG] ##### 有新的微信会员关注 is:赵法猛 @ oMAPGjuK_3IZgpUh8YsFAy5MrPYA
+2016-01-20T14:22:44+08:00 [DEBUG] ##### 有新的微信会员关注 is:Soll、小夕     ‍微信超級會員 @ oMAPGjuU47-DDmz5q9p6zZnR6b5A
+2016-01-20T14:22:45+08:00 [DEBUG] ##### 有新的微信会员关注 is:海燕 @ oMAPGjiIScmO_OzaikJPdjtsyn8k
+2016-01-20T14:22:45+08:00 [DEBUG] ##### 有新的微信会员关注 is:Francesco @ oMAPGjozLAj04edGI6rxBlnqo2Ac
+2016-01-20T14:22:45+08:00 [DEBUG] ##### 有新的微信会员关注 is:张军梅 @ oMAPGjnat58g6Bi4Vrk8l7ddSWx0
+2016-01-20T14:22:45+08:00 [DEBUG] ##### 有新的微信会员关注 is:王永乐 @ oMAPGjgsp0FT3HqXf_ZDu4PAV2wk
+2016-01-20T14:22:45+08:00 [DEBUG] ##### 有新的微信会员关注 is:王冬艳 @ oMAPGjnWbEyQCC-aH-nLwlzkM-ss
+2016-01-20T14:22:46+08:00 [DEBUG] ##### 有新的微信会员关注 is:A米粒儿 @ oMAPGjr-pzLFyS7-4ahkt0Yc5KFQ
+2016-01-20T14:22:46+08:00 [DEBUG] ##### 有新的微信会员关注 is:毛浩 @ oMAPGjsPvDUuiZFTNX0V6xfSKpYo
+2016-01-20T14:22:46+08:00 [DEBUG] ##### 有新的微信会员关注 is:土豆是我的最爱 @ oMAPGjgjs5nL_GcrPXWL6g8X7I4A
+2016-01-20T14:22:46+08:00 [DEBUG] ##### 有新的微信会员关注 is:冰凌泡沫 @ oMAPGjhsSXj9JisonFUFhP4x7S2Q
+2016-01-20T14:22:46+08:00 [DEBUG] ##### 有新的微信会员关注 is:余双双—绿羽17705819180 @ oMAPGjsuRHwCAMEJr2XJE92Sawjg
+2016-01-20T14:22:47+08:00 [DEBUG] ##### 有新的微信会员关注 is:张小妮 @ oMAPGjsyUQLJVbMQ8wtfgBxG_Ojs
+2016-01-20T14:22:47+08:00 [DEBUG] ##### 有新的微信会员关注 is:nicole @ oMAPGjmQ-RaeD4C7qGDyiAUw1um4
+2016-01-20T14:22:47+08:00 [DEBUG] ##### 有新的微信会员关注 is:A德国瑞好地暖，军星地暖 @ oMAPGjvs1GO8fTyyISBYIfvOVD1g
+2016-01-20T14:22:48+08:00 [DEBUG] ##### 有新的微信会员关注 is:独钓寒江 .. @ oMAPGjtrHy-8CKWZi7IX6EzQBOU4
+2016-01-20T14:22:48+08:00 [DEBUG] ##### 有新的微信会员关注 is:唐金平 @ oMAPGjsbQvzMsc1fRAiwQBvpXF64
+2016-01-20T14:22:48+08:00 [DEBUG] ##### 有新的微信会员关注 is:曾帮连-美洛舒适家 @ oMAPGjparENc4EC4PK1gjLUfEZCI
+2016-01-20T14:22:48+08:00 [DEBUG] ##### 有新的微信会员关注 is:绿野仙踪 @ oMAPGjvKvGy8wJ9oAIC6GdAdBKSk
+2016-01-20T14:22:48+08:00 [DEBUG] ##### 有新的微信会员关注 is:Nils Wagner @ oMAPGjqmzUEa4xGwYtnjAT7qQc4Q
+2016-01-20T14:22:49+08:00 [DEBUG] ##### 有新的微信会员关注 is:小林 @ oMAPGjsJonhkcVSFVsm6Ywnob6to
+2016-01-20T14:22:49+08:00 [DEBUG] ##### 有新的微信会员关注 is:大金全效中央空调    杨波 @ oMAPGjhRcZo2eMx6BwK5YJRgtiPM
+2016-01-20T14:22:49+08:00 [DEBUG] ##### 有新的微信会员关注 is:Lch @ oMAPGjv3HN0zMlJ-BkLGJ53PAI_M
+2016-01-20T14:22:49+08:00 [DEBUG] ##### 有新的微信会员关注 is:EileenTang(鄧伊琳) @ oMAPGjrRLaSCrZUv2n-K9QEvSB-I
+2016-01-20T14:22:49+08:00 [DEBUG] ##### 有新的微信会员关注 is:小皮猪@丰扬舒适家 @ oMAPGjmIg3r-wt6i9pyO9G2TGz4k
+2016-01-20T14:22:50+08:00 [DEBUG] ##### 有新的微信会员关注 is:summersnow0218 @ oMAPGjqiPZfxZuWIVjFwG5Jc6IFA
+2016-01-20T14:22:50+08:00 [DEBUG] ##### 有新的微信会员关注 is:红星 @ oMAPGjrqLnMlcO3N_6LWrnuV74yo
+2016-01-20T14:22:50+08:00 [DEBUG] ##### 有新的微信会员关注 is:亚特尔地源科技东方城颐和湾李鑫 @ oMAPGjtjTaIsPocy5-y4od7FGHgI
+2016-01-20T14:22:50+08:00 [DEBUG] ##### 有新的微信会员关注 is:Wlsvip @ oMAPGjsStBwcoaYQa2xCEpBU8dgo
+2016-01-20T14:22:51+08:00 [DEBUG] ##### 有新的微信会员关注 is:擎天冷暖 @ oMAPGjvJh8A3rMa3JMoZSdyVHrgY
+2016-01-20T14:22:51+08:00 [DEBUG] ##### 有新的微信会员关注 is:A-刘大辉 @ oMAPGjk8uRG0bj5U3pORE8mOZK9E
+2016-01-20T14:22:51+08:00 [DEBUG] ##### 有新的微信会员关注 is:ymx虾虾 @ oMAPGjlZFXwH5P-UnoBdLfagRQrQ
+2016-01-20T14:22:51+08:00 [DEBUG] ##### 有新的微信会员关注 is:你我他 @ oMAPGjg-apvRFx7gPhqvC35Mkcqw
+2016-01-20T14:22:51+08:00 [DEBUG] ##### 有新的微信会员关注 is:湖北来福暖通设备有限公司刘涛 @ oMAPGjoIofLRRsu5T7TdGuZt1Fx8
+2016-01-20T14:22:52+08:00 [DEBUG] ##### 有新的微信会员关注 is:傻小子 @ oMAPGjiaxjn1L6VvMAz46vtyEMgA
+2016-01-20T14:22:52+08:00 [DEBUG] ##### 有新的微信会员关注 is:私人定制.纯手工雕刻.木立方卫浴 @ oMAPGjiChfZd9zTopRD78r6HCVN8
+2016-01-20T14:22:52+08:00 [DEBUG] ##### 有新的微信会员关注 is:禹州木立方卫浴专卖店刘高峰 @ oMAPGjkD9x6DBmv7wb0A0Sxyqya0
+2016-01-20T14:22:52+08:00 [DEBUG] ##### 有新的微信会员关注 is:朵儿 @ oMAPGjhzblTcrTkMDOEyCEDmdcOE
+2016-01-20T14:22:52+08:00 [DEBUG] ##### 有新的微信会员关注 is:康普楼宇陈林杰 @ oMAPGjk-tvU2-LlfGMkg-PPJHCIQ
+2016-01-20T14:22:53+08:00 [DEBUG] ##### 有新的微信会员关注 is:唐小倩_Tina @ oMAPGjg3iILf6KmXgZ_GvGp_b54Y
+2016-01-20T14:22:53+08:00 [DEBUG] ##### 有新的微信会员关注 is:chenxingan @ oMAPGjpgk7aVnpzi5QsO-NlHYdm0
+2016-01-20T14:22:53+08:00 [DEBUG] ##### 有新的微信会员关注 is:三脚猫软智慧=林景明 @ oMAPGjpFIod2iIh1JFD8KMIExv3A
+2016-01-20T14:22:53+08:00 [DEBUG] ##### 有新的微信会员关注 is:直深 @ oMAPGjtA6JiGysXciLetel8--0v0
+2016-01-20T14:22:54+08:00 [DEBUG] ##### 有新的微信会员关注 is:剧中人 @ oMAPGjjIPNuYCBWrUWxX3LVqI304
+2016-01-20T14:22:54+08:00 [DEBUG] ##### 有新的微信会员关注 is:真寶兒 @ oMAPGjowWiaZPyExL1d_WYaJooVw
+2016-01-20T14:22:54+08:00 [DEBUG] ##### 有新的微信会员关注 is:徐浩 @ oMAPGjv3zjxARgHaiQKXKSwEVObE
+2016-01-20T14:22:54+08:00 [DEBUG] ##### 有新的微信会员关注 is:程晶晶💋 @ oMAPGjoo1Przb4_T1b0rFrwuO8rk
+2016-01-20T14:22:54+08:00 [DEBUG] ##### 有新的微信会员关注 is:心底星 @ oMAPGjk3h5uLAug6EaEWeChEqW-w
+2016-01-20T14:22:55+08:00 [DEBUG] ##### 有新的微信会员关注 is:eling @ oMAPGjoVV7Co_98vqyyb2JmhACI4
+2016-01-20T14:22:55+08:00 [DEBUG] ##### 有新的微信会员关注 is:lily @ oMAPGjlgjqOz_dUXJ6GecXfGGA7c
+2016-01-20T14:22:55+08:00 [DEBUG] ##### 有新的微信会员关注 is:⭐️⭐️⭐️ @ oMAPGjtZNCX_tfNzOpv5-FSZNlF8
+2016-01-20T14:22:55+08:00 [DEBUG] ##### 有新的微信会员关注 is:子文陈 @ oMAPGjrZ6XRFxnrZiEyaOXpuC-1U
+2016-01-20T14:22:55+08:00 [DEBUG] ##### 有新的微信会员关注 is:独白 @ oMAPGjgOXklaFKKIJEatIAM6MqYU
+2016-01-20T14:22:56+08:00 [DEBUG] ##### 有新的微信会员关注 is:AAAA鸿兴暖通-张奕明 @ oMAPGjmyaszA0oCDiIgkMQ6g7K1E
+2016-01-20T14:22:56+08:00 [DEBUG] ##### 有新的微信会员关注 is: 暖之郎张炎  15994066877 @ oMAPGjsyTFHK2mnZymd263W-Jg0M
+2016-01-20T14:22:56+08:00 [DEBUG] ##### 有新的微信会员关注 is:湘君 @ oMAPGjhw7Bl2FCim9_Joh520MvPw
+2016-01-20T14:22:56+08:00 [DEBUG] ##### 有新的微信会员关注 is:美洛舒适家地暖小钟 @ oMAPGjlQNG_2I-CzCa9Jj2wpx46Y
+2016-01-20T14:22:57+08:00 [DEBUG] ##### 有新的微信会员关注 is:Jane Wang @ oMAPGjmkVmheG7clEEf7V_uAgdqU
+2016-01-20T14:22:57+08:00 [DEBUG] ##### 有新的微信会员关注 is:雷才华 Mark @ oMAPGjjd6TpAYGLDpGVMROphlilg
+2016-01-20T14:22:57+08:00 [DEBUG] ##### 有新的微信会员关注 is:AAAAA新密德国瑞好地暖 @ oMAPGjn-cwELXeZWcHeejvUnMzfE
+2016-01-20T14:22:57+08:00 [DEBUG] ##### 有新的微信会员关注 is:小小年纪 @ oMAPGjk_3btOpZAVsLmGwCuIgRQs
+2016-01-20T14:22:57+08:00 [DEBUG] ##### 有新的微信会员关注 is:英国BAXl供暖 @ oMAPGjqU_BCDUMmazS868YeKRO_o
+2016-01-20T14:22:58+08:00 [DEBUG] ##### 有新的微信会员关注 is:✨英♛雄✨ @ oMAPGjlAaz5hC84uFEO5X82zX7WM
+2016-01-20T14:22:58+08:00 [DEBUG] ##### 有新的微信会员关注 is:康普供暖•余振云 @ oMAPGjva23_lCiWCbP6j39gkzD40
+2016-01-20T14:22:58+08:00 [DEBUG] ##### 有新的微信会员关注 is:Chris 💃 ฏ๎๎๎๎╯ @ oMAPGjky9bUnoh4M650eXwh2zKeU
+2016-01-20T14:22:58+08:00 [DEBUG] ##### 有新的微信会员关注 is:同样的中央空调地暖我们可以更节能 @ oMAPGjnwW20j6zO93fpFndjQWkC4
+2016-01-20T14:22:58+08:00 [DEBUG] ##### 有新的微信会员关注 is:滁州擎天冷暖 @ oMAPGjvjNn6edcfj2xy6nQgxNcYA
+2016-01-20T14:22:59+08:00 [DEBUG] ##### 有新的微信会员关注 is:李安磊 (Alex) @ oMAPGjmnrhmJ-ZJmuL_2eN1ntWSI
+2016-01-20T14:22:59+08:00 [DEBUG] ##### 有新的微信会员关注 is:幽谷醉客 @ oMAPGjpdkYlbQDi-JEKHS8wwWUbw
+2016-01-20T14:22:59+08:00 [DEBUG] ##### 有新的微信会员关注 is:宁开东 @ oMAPGjoVE8FTaVT3jU8aU048HJjk
+2016-01-20T14:22:59+08:00 [DEBUG] ##### 有新的微信会员关注 is:舒适100江怀宾 @ oMAPGjiqJ1ngNG-c_h2E4ur5_dHc
+2016-01-20T14:23:00+08:00 [DEBUG] ##### 有新的微信会员关注 is:M @ oMAPGjo4aEZVKgqtv8f5Q15LcZn4
+2016-01-20T14:23:00+08:00 [DEBUG] ##### 有新的微信会员关注 is:A谷鼎暖通☞邹旺成 @ oMAPGjrjeosxd2P23yGQkLpAzAUA
+2016-01-20T14:23:00+08:00 [DEBUG] ##### 有新的微信会员关注 is:阳光_Yang @ oMAPGjsH0xEZu0kH33OZlJPnYGVU
+2016-01-20T14:23:00+08:00 [DEBUG] ##### 有新的微信会员关注 is:天际 @ oMAPGjqdA2oxd64T7ul9tjjlVcLE
+2016-01-20T14:23:00+08:00 [DEBUG] ##### 有新的微信会员关注 is:戴琰 @ oMAPGjuYLr8h5Q_BRm_zPMXoIm3c
+2016-01-20T14:23:01+08:00 [DEBUG] ##### 有新的微信会员关注 is:Emily @ oMAPGjijpnmQXpBQbOVs7qNYvhbo
+2016-01-20T14:23:01+08:00 [DEBUG] ##### 有新的微信会员关注 is:向日葵是太阳的每一天笑脸 @ oMAPGjtJLJM85MLr-NYRtYDyjxXU
+2016-01-20T14:23:01+08:00 [DEBUG] ##### 有新的微信会员关注 is:安寂静岭@威廉公爵 @ oMAPGjp5T0QT4upKhbdfdSdXJ0nE
+2016-01-20T14:23:01+08:00 [DEBUG] user data is:array (
+  'total' => 104,
+  'count' => 0,
+  'next_openid' => '',
+)

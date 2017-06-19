@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<?php include 'meta.html';?>
+	<title>小游戏试玩贪吃蛇经典回归！</title>
+    <script src="/theme/wechat/assets/js/jquery-1.8.2.min.js?v=1"></script>
+</head>
+<body style="margin:0;padding:0;">
+
+    <div id="top" style="position:relative;overflow:hidden;text-align:center;">
+        <div style="margin-top:30px;line-height:30px;color:#555;">
+                一天只有3次机会哦，请明天再战！
+            <br><span style="font-size:13px;">（分享朋友圈可最多额外获得３次机会）</span>
+        </div>
+        <div style="position:absolute;z-index:8;top:130px;left:50%;line-height:200px;text-align:center;margin-left:-100px;width:200px;height:200px;background:#cf3d7c;color:#fff;border-radius:50%;">
+            <span style="font-size:32px;font-weight:bold;"><?php echo $score->score;?></span>
+        </div>
+        <div style="font-size:14px;z-index:9;position:absolute;top:170px;left:50%;text-align:center;margin-left:-100px;width:200px;color:#fff;">你的历史最高分为</div>
+        <div style="font-size:12px;z-index:10;position:absolute;top:280px;left:50%;text-align:center;margin-left:-100px;width:200px;color:#fff;">击败了 <?php echo $beatUser."%";?> 的游戏用户</div>
+    </div>
+    <div id="bot" style="position:relative;text-align:center;">
+        <div style="margin-top:10px;line-height:40px;text-align:center;">
+            <a href="/wechat/snake/top" style="font-size:16px;color:#cf3d7c;text-decoration:underline;">查看实时排行</a><br>
+            <a target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzA5MzAxNTg3Ng==&mid=209226830&idx=1&sn=28f242d2251e098eabb276793109efbc#rd" style="font-size:16px;color:#cf3d7c;text-decoration:underline;">了解更多小游戏试玩管道产品</a><br>
+            <span style="color:#999;font-size:13px;">获取再战信心<span>
+        </div>
+        <div style="margin-top:20px;text-align:center;">
+            <a href="javascript:sharePopup();" style="text-decoration:none;border-radius:5px;line-height:38px;font-size:16px;color:#fff;height:38px;width:120px;border:1px solid #bf2d5c;background:#cf3d7c;padding:10px 15px;margin-left:8px;">分享到朋友圈</a>
+        </div>
+    </div>
+
+    <script>
+        var h = window.innerHeight;
+        $('#top').height(h*0.64);
+        $('#bot').height(h*0.36);
+    </script>
+        <?php include __DIR__ . '/snake-share.html';?>
+        <?php include __DIR__ . '/footer.html'; ?>
+</body>
+</html>

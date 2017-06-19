@@ -1,0 +1,29 @@
+server {
+    charset utf-8;
+    client_max_body_size 128M;
+    listen 80; ## ¼àÌý ipv4 ÉÏµÄ 80 ¶Ë¿Ú
+    server_name qywx.hyhh.com;
+    access_log  logs/hyhh.access.log  main;
+    root        /home/wwwroot/hyhh;
+    index       index.php;
+
+
+
+    location / { 
+        if (!-e $request_filename){
+
+            rewrite ^/(.*)$ /index.php/$1 last;
+        }   
+
+    }   
+
+    location ~ \.php(/|$) {
+        fastcgi_pass unix:/tmp/php-cgi.sock;
+        fastcgi_index  index.php;
+        fastcgi_split_path_info ^(.+\.php)(.*)$;
+        fastcgi_param   PATH_INFO $fastcgi_path_info;
+        fastcgi_param  SCRIPT_FILENAME   $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }   
+
+} 

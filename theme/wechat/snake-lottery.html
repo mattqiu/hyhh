@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>小游戏试玩贪吃蛇经典回归！</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="/theme/wechat/assets/css/snake.css?v=1.65" />
+    <style>
+        a {text-decoration:none;}
+    </style>
+    <script src="/theme/wechat/assets/js/jquery-1.8.2.min.js?v=1"></script>
+    <script src="/theme/wechat/assets/js/snake.js?v=1.9"></script>
+</head>
+<body style="margin:0;padding:0;background:url(/theme/wechat/assets/images/lottery_bg.jpg) scroll no-repeat;-webkit-background-size:cover;background-size:cover;">
+
+    <canvas id="fireworks2"></canvas>
+    
+    <div id="top" style="position:relative;overflow:hidden;">
+        <?php if (isset($lottery) && $lottery->status!=0): ?>
+        <div id="hongbao" onclick="WeixinJSBridge.call('closeWindow');" style="width:206px;height:140px;position:absolute;z-index:999;top:50%;left:50%;margin-left:-110px;margin-top:-50px;background:#fff;border:1px solid #eee;border-radius:7px;text-align:center;padding:20px 20px;line-height:24px;">
+            恭喜你<br>获得小游戏试玩红包一只！
+            <div style="margin:10px 0px 0px 33px;width:140px;height:72px;background:url(/theme/wechat/assets/images/thanks.png) scroll no-repeat;-webkit-background-size:cover;background-size:cover;text-align:center;font-size:20px;line-height:70px;color:#fff;">
+                马上去查收
+            </div>
+        </div>
+        <script>$(function() {new firepass('#d23d74');});</script>
+        <?php else: ?>
+        <div id="hongbao" onclick="WeixinJSBridge.call('closeWindow');" style="width:206px;height:140px;position:absolute;z-index:999;top:50%;left:50%;margin-left:-103px;margin-top:-50px;background:#fff;border:1px solid #eee;border-radius:7px;text-align:center;padding:20px 20px;line-height:24px;">
+            很遗憾<br>你与红包擦肩而过！
+            <div style="margin:18px 0px 0px 30px;width:140px;height:72px;background:url(/theme/wechat/assets/images/thanks.png) scroll no-repeat;-webkit-background-size:cover;background-size:cover;text-align:center;font-size:20px;line-height:70px;color:#fff;">
+                谢谢参与
+            </div>
+        </div>
+        <script>$(function() {new firepass('#cccccc');});</script>
+        <?php endif; ?>
+    </div>
+    
+    <div id="bot" style="position:relative;">
+        <div style="position:absolute;top:2%;left:50%;margin-left:-150px;width:300px;text-align:center;z-index:9991;">
+            <?php if($snake->residue_times>0):?>
+            <a href="/wechat/snake/play?openid=<?php echo $userinfo->openid;?>" style="text-decoration:none;border-radius:5px;line-height:40px;font-size:16px;color:#fff;height:40px;width:120px;border:1px solid #bf2d5c;background:#cf3d7c;padding:15px 12px;">再挑战一次</a>
+            <?php else:?>
+            <a href="#" style="text-decoration:none;border-radius:5px;line-height:40px;font-size:16px;color:#fff;height:40px;width:200px;border:1px solid #bbb;background:#ccc;padding:15px 8px;">次数已用完,请明天再战</a>
+            <?php endif;?>
+            <a href="javascript:sharePopup();" style="text-decoration:none;border-radius:5px;line-height:40px;font-size:16px;color:#fff;height:40px;width:120px;border:1px solid #bf2d5c;background:#cf3d7c;padding:15px 12px;margin-left:20px;">分享</a>
+        </div>
+    </div>
+    
+    
+    <script>
+        var h = window.innerHeight;
+        $('#top').height(h*0.7);
+        $('#bot').height(h*0.3);
+    </script>
+
+    <?php include __DIR__ . '/snake-share.html';?>
+</body>
+</html>

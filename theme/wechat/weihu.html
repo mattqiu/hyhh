@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Language" content="zh-CN"><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/><meta content="telephone=no" name="format-detection"/><link rel="stylesheet" type="text/css" href="http://open.weixin.qq.com/connect/zh_CN/htmledition/style/wap_err1a9853.css"/>
+<title>测试页面</title></head><body><div class="page_msg"><div class="inner"><span class="msg_icon_wrp"><i class="icon80_smile"></i></span><div class="msg_content"><h4>测试页面</h4><h3><a href="/wechat/test">测试连接</a></h3></div></div></div>
+<br>
+<?php print_r($wx_authen);?>
+<br>
+<h3>模拟数据提交</h3>
+<form name="checkform" id="test_form">
+    <input type="text" name="name"><br>
+    <input type="text" name="password"><br>
+    <input type="text" name="username"><br>
+    <input type="button" value="提交" id="send">
+</form>
+<script src="/theme/wechat/assets/js/jquery-1.8.2.min.js"></script>
+<script>
+    $(function(){
+        $("#send").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "/wechat/test/post",
+                data: $("#test_form").serialize(),
+                dataType: "json",
+                success: function(data){
+                  if (data.status=="success") {
+                    alert('ok done');
+                      location.href="/wechat/test";
+                  } else {
+                     alert(data.msg);
+                     return false;
+                  }
+                }
+            });
+        });
+        });
+</script>
+</body></html>

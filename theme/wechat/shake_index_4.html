@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>疯狂摇大奖</title>
+        <meta http-equiv="Content-Language" content="zh-CN"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+        <script src="/theme/wechat/assets/js/jquery-1.8.2.min.js"></script>
+        <script src="/theme/wechat/assets/js/jquery.easing.min.js"></script>
+        <!--[if lt IE 9]>            
+            <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+            <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+            <script type="text/javascript" src="/theme/wechat/assets/js/excanvas.compiled.js"></script>
+        <![endif]-->
+        <style>
+            body {font-family:HelveticaNeueLT Com 67 MdCn, Helvetica, "Microsoft YaHei", Arial, sans-serif;margin:0;padding:0;background:#fff url(/theme/wechat/assets/images/pc-bg.jpg) scroll no-repeat;-webkit-background-size:cover;background-size:cover;overflow:hidden;}
+            .content {width:1000px;height:750px;position:absolute;left:50%;top:50%;margin-left:-500px;margin-top:-380px;z-index:8;}
+            .content {background:url(/theme/wechat/assets/images/pc-step4.png) scroll no-repeat;-webkit-background-size:cover;background-size:cover;}
+            .clickable {height:200px;width:400px;position:absolute;bottom:100px;left:300px;cursor:pointer;}
+        </style>
+    </head>
+    <body>
+        <div class="content"><div style="position:relative;height:700px"><div class="clickable"></div></div></div>
+        
+        <div id="daojishibg" style="display:none;"></div>
+        <div id="daojishi" style="display:none;">
+            <span id="num5">5</span>
+            <span id="num4">4</span>
+            <span id="num3">3</span>
+            <span id="num2">2</span>
+            <span id="num1">1</span>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        var shake_id;
+        function startGame() {
+            var t = new Date().getTime();
+            $.ajax({
+                url: '/wechat/shake/start',
+                data: {format:'json',start:1,t:t},
+                dataType:'json',
+                success: function(res) {
+                    if (res.status == 200) {
+                        shake_id = res.data.shake.id;
+                        startDaojishi();
+                    }
+                }
+            });
+        }
+        function startDaojishi() {
+            $('#daojishibg').css({
+                'z-index':99,
+                display: 'block',
+                position: 'absolute',
+                top:0,
+                left:0,
+                right:0,
+                bottom:0,
+                width:'100%',
+                height:'100%',
+                background:'rgba(0,0,0,0.8)',
+                filter:'progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000)'
+            });
+            $('#daojishi').css({
+                'z-index':100,
+                display: 'block',
+                position: 'absolute',
+                width:'200px',
+                height:'200px',
+                left:'50%',
+                top:'50%',
+                color:'#fff',
+                'margin-left':'-100px',
+                'margin-top':'-120px',
+                'text-align':'center',
+                'font-size':'200px'
+            });
+            for (var i=5; i>=1; i--) {
+                $('#num'+i).css({'font-size':'1px', 'display':'block'});
+                $('#num'+i).delay((5-i)*1000).animate(
+                    {
+                        'font-size':'200px'
+                    },
+                    {
+                        easing: 'easeInExpo',
+                        duration: 400,
+                        done: function() {
+                            hideNum($(this));
+                        }
+                    }
+                );
+            }
+        }
+        function hideNum(o) {
+            var id = o.attr('id');
+            o.delay(700).hide(50);
+            if (id == 'num1') {
+                $('#daojishi').delay(800).hide(1);
+                $('#daojishibg').delay(600).hide(1);
+                setTimeout(function(){
+                    location.href = '/wechat/shake/start?shake_id='+shake_id;
+                },800);
+            }
+        }
+        $('.clickable').click(function(){
+            startGame();
+        });
+    </script>
+</html>

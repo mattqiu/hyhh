@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php require_once 'common.html';?>
+        <title>编辑 活动</title>
+</head>
+<body>
+    <?php require_once 'header.html';?>
+        <div class="wrap">
+        <?php require_once 'admin-sidebar.html';?>
+            <div class="main-content">
+            
+                <div class="page-content">
+                    
+                    <div class="page-header">
+                        <h1>编辑 活动</h1>
+                    </div><!-- /.page-header -->
+                    
+                    <div class="form-horizontal">
+                        <form method="post" action="" enctype="multipart/form-data" id="shake-edit">
+                            <input type="hidden" name="id" value="<?php echo $shake->id;?>">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right"> 活动名称</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group col-sm-9">
+                                        <input type="text" name="title" class="form-control" value="<?php echo $shake->title;?>" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right"> 活动图片</label>
+                                <div class="col-sm-9">
+                                    <input type="hidden" class="image-src_0" name="preview" class="form-control" placeholder="" value="<?php echo $shake->preview;?>" />
+                                        <span class="avatarUpload" data-id="src_0" id="src_0">浏览文件</span>
+                                        <img class="imageshow-src_0" style="max-width:300px;max-height:200px;"  src="<?php echo $shake->preview;?>"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">游戏时间</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group col-sm-9">
+                                        <input type="text" name="timeout" class="form-control" value="<?php echo $shake->timeout;?>" placeholder="秒"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">游戏简介</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group col-sm-9">
+                                        <textarea name="summary" class="form-control" rows="3"><?php echo $shake->summary;?></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">游戏状态</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group col-sm-9">
+                                        <select class="form-control" name="status">
+                                            <option value="1" <?php echo ($shake->status=='1')?'selected':'';?>>未开始</option>
+                                            <option value="2" <?php echo ($shake->status=='2')?'selected':'';?>>进行中</option>
+                                            <option value="3" <?php echo ($shake->status=='3')?'selected':'';?>>已结束</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix form-actions">
+                                <div class="col-sm-offset-3 col-sm-9">
+                                    <button type="button" class="btn btn-btn shake-edit">
+                                        <i class="fa fa-check"></i>
+                                        保存
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- /.form-horizontal -->
+
+                </div>
+            
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+        
+        <?php require_once 'footer.html';?>
+
+        <script>
+        $(function(){
+            $(".shake-edit").click(function(){
+                $.ajax({
+                    type: "POST",
+                    url: "/admin/shake/update",
+                    data: $("#shake-edit").serialize(),
+                    dataType: "json",
+                    success: function(data){
+                      if (data.status=="success") {
+                        location.href="/admin/shake/search";
+                      } else {
+                         alert(data.msg);
+                         return false;
+                      }
+                    }
+                });
+            });
+        });
+        </script>
